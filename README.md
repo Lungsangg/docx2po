@@ -103,7 +103,7 @@ The script will create a new folder called 'po_files' within the same directory 
 
 
 
-### post-processing step for removing '/n'
+### 4. post-processing step for removing '/n'
 
 If you're encountering newline characters ('\n') at the end of each line in the Gettext PO file, you can remove them by making some small changes in your 'convert_to_po.sh' shell script as suggested below :
 
