@@ -1,6 +1,6 @@
 
 
-#### 1. Install the Translate Toolkit:
+### 1. Install the Translate Toolkit:
 
 Make sure you have Python installed on your system. Then, you can install the Translate Toolkit using pip:
 
@@ -10,7 +10,7 @@ pip install translate-toolkit
 ```
 
 
-#### 2. Convert DOCX to plain text:
+### 2. Convert DOCX to plain text:
 
 Assuming you have multiple DOCX files in a directory, you can use a loop in a shell script to convert each file.
 
@@ -59,7 +59,7 @@ The plain text files will be saved in a new folder called plain_text_files withi
 
 
 
-#### 3. Convert plain text to Gettext PO file
+### 3. Convert plain text to Gettext PO file
 
 1. Open your terminal
 2. Navigate to the directory containing the plain text files you want to convert (if they are in a different location).
