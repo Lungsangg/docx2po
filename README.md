@@ -100,3 +100,30 @@ chmod +x convert_to_po.sh
 
 
 The script will create a new folder called 'po_files' within the same directory where the script is executed. It will then loop through all the plain text files in the directory, convert them to Gettext PO files using 'txt2po', and save the resulting PO files in the 'po_files' folder.
+
+
+
+### post-processing step for removing '/n'
+
+If you're encountering newline characters ('\n') at the end of each line in the Gettext PO file, you can remove them by making some small changes in your 'convert_to_po.sh' shell script as suggested below :
+
+```
+#!/bin/bash
+
+# Create a directory to store the PO files
+mkdir -p po_files
+
+# Loop through all plain text files in the current directory and convert them to PO
+for file in *.txt; do
+    # Get the file name without the extension
+    filename="${file%.txt}"
+    # Convert the plain text file to PO with txt2po and save it in the "po_files" folder
+    txt2po "$file" -o "po_files/${filename}.po"
+    # Remove the newline characters from the generated PO file
+    sed -i 's/\\n//g' "po_files/${filename}.po"
+done
+
+```
+
+
+The script will now convert the plain text files to Gettext PO files using 'txt2po', and after the conversion, it will remove the newline characters from the generated PO files using 'sed'.
