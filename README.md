@@ -55,8 +55,7 @@ Run the script:
 ```
 ./convert_files.sh
 ```
-
-With this updated script, the plain text files will be saved in a new folder called plain_text_files within the same directory where the script is executed. For example, if you have file1.docx, file2.docx, etc., the script will generate plain_text_files/file1.txt, plain_text_files/file2.txt, etc.
+The plain text files will be saved in a new folder called plain_text_files within the same directory where the script is executed. For example, if you have file1.docx, file2.docx, etc., the script will generate plain_text_files/file1.txt, plain_text_files/file2.txt, etc.
 
 
 
