@@ -4,7 +4,9 @@
 
 Make sure you have Python installed on your system. Then, you can install the Translate Toolkit using pip:
 
-```pip install translate-toolkit
+```
+pip install translate-toolkit
+
 ```
 
 
@@ -16,7 +18,9 @@ Navigate to the directory containing your DOCX files (if they are in a different
 
 Create a new shell script (e.g., convert_files.sh) using a text editor or use the terminal to create and edit the script:
 
-```nano convert_files.sh
+```
+nano convert_files.sh
+
 ```
 
 Inside the script, use a loop to convert each DOCX file to plain text and save them in a separate folder:
@@ -43,6 +47,7 @@ Save the script by pressing Ctrl+O and then exit the editor by pressing Ctrl+X.
 Make the shell script executable:
 ```
 chmod +x convert_files.sh
+
 ```
 
 Run the script:
